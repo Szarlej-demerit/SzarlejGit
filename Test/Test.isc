@@ -1,0 +1,43 @@
+#ISD afv6
+# ISD version: 1.0.0.201606231656-435
+
+# Application configuration
+stackId: rail
+stackRoot: D:\Projects\Gecko\SiliconLabs\SiliconLabsRAIL\1.2.0.0-GA
+appId: rail
+architecture: efr32~family[M]~performance[P]~radio[232]~flash[256K]~temp[G]~package[M]~pins[48]+BRD4151A
+deviceName: rail
+generationDirectory: PATH(ISC_RELATIVE):.
+
+# Devices
+
+# Plugin configuration
+appPlugin: buffer-pool-memory-manager=true
+appPlugin: circular-queue=false
+appPlugin: command-interpreter=true
+appPlugin: hal-efr32=true
+appPlugin: lcd-graphics=true
+appPlugin: rail-lib=true
+appPlugin: railtest-base=false
+appPlugin: rangetest-base=false
+appPlugin: response-printf=true
+
+# Setup configurations
+{setupId:additionalFiles
+}
+{setupId:boardHeader
+}
+{setupId:callbackConfiguration
+}
+{setupId:efr32RadioConfig
+BASE_FREQUENCY_HZ=long:2405000000
+CONFIGURATOR_VERSION=string:0.61.0
+PHY=serializableObject:Efr32RadioConfiguratorPhy:IEEE802154:PHY_IEEE802154_2p4GHz_Studio
+PROFILE=serializableObject:Efr32RadioConfiguratorProfile:IEEE802154
+}
+{setupId:information
+}
+{setupId:macros
+}
+
+# Plugin options
