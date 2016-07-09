@@ -1,1 +1,0 @@
-//This is a blank template file that is not currently used
