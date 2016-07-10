@@ -19,10 +19,10 @@ int main(void){
 	GRAPHICS_Init();
 
 	GRAPHICS_Clear();
-
+	// Стандартная функция из graphics.c
 	GRAPHICS_AppendString("Hello World!");
+	// Простенкая функция, рисующая линию
 	GRAPHICS_AppendLine();
-	GRAPHICS_AppendString("Promwad");
 
 	GRAPHICS_Update();
 

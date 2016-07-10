@@ -108,7 +108,7 @@ void GRAPHICS_AppendString(char *str)
                   0);
   yOffset += glibContext.font.fontHeight + glibContext.font.lineSpacing;
 }
-
+//Функция вставляет линию с новой строки
 void GRAPHICS_AppendLine(void)
 {
   GLIB_drawLineH(&glibContext,
