@@ -1,4 +1,4 @@
-/**************************************************************************//**
+﻿/**************************************************************************//**
  * @brief Draws the graphics on the display
  * @version 3.20.5
  ******************************************************************************
@@ -108,7 +108,7 @@ void GRAPHICS_AppendString(char *str)
                   0);
   yOffset += glibContext.font.fontHeight + glibContext.font.lineSpacing;
 }
-//Функция вставляет линию с новой строки
+//Р¤СѓРЅРєС†РёСЏ РІСЃС‚Р°РІР»СЏРµС‚ Р»РёРЅРёСЋ СЃ РЅРѕРІРѕР№ СЃС‚СЂРѕРєРё
 void GRAPHICS_AppendLine(void)
 {
   GLIB_drawLineH(&glibContext,

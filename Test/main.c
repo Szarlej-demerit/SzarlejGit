@@ -19,9 +19,9 @@ int main(void){
 	GRAPHICS_Init();
 
 	GRAPHICS_Clear();
-	// Стандартная функция из graphics.c
+	// РЎС‚Р°РЅРґР°С‚РЅР°СЏ С„СѓРЅРєС†РёСЏ РёР· graphics.c
 	GRAPHICS_AppendString("Hello World!");
-	// Простенкая функция, рисующая линию
+	// РџСЂРѕСЃС‚РµРЅСЊРєР°СЏ С„СѓРЅРєС†РёСЏ, СЂРёСЃСѓСЋС‰Р°СЏ Р»РёРЅРёСЋ
 	GRAPHICS_AppendLine();
 
 	GRAPHICS_Update();
