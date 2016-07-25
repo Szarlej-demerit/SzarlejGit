@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.silabs.ide.si32.iar.debug#com.silabs.ide.si32.iar:7.50.2.10312">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.silabs.ide.si32.iar.debug#com.silabs.ide.si32.iar:7.50.2.10312" moduleId="org.eclipse.cdt.core.settings" name="IAR ARM - Debug">
+				<macros>
+					<stringMacro name="StudioToolchainPath" type="VALUE_PATH_DIR" value="${StudioToolchainPathFromID:com.silabs.ide.si32.iar:7.50.2.10312}"/>
+					<stringMacro name="StudioSdkPath" type="VALUE_PATH_DIR" value="${StudioSdkPathFromID:com.silabs.ember.sdk.external.rail:1.2.0.-256640824}"/>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="com.silabs.ide.debug.core.S37" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.silabs.ide.debug.core.BIN" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.silabs.ide.debug.core.HEX" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.iar.cdt.errorParser.com.iar.cdt.errorParser.ErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule buildConfig.stockConfigId="com.silabs.ide.si32.iar.debug#com.silabs.ide.si32.iar:7.50.2.10312" cppBuildConfig.builtinIncludes="studio:/sdk/submodules/CMSIS/Include/ studio:/sdk/submodules/Device/SiliconLabs/EFR32MG1P/Include/ studio:/sdk/submodules/rail_lib/chip/efr32/ studio:/sdk/submodules/CMSIS/Include/ studio:/sdk/submodules/Device/SiliconLabs/EFR32MG1P/Include/ studio:/sdk/submodules/rail_lib/chip/efr32/" cppBuildConfig.builtinLibraryFiles="studio:/sdk/autogen/librail_release/librail_efr32_iar_release.a" cppBuildConfig.builtinLibraryNames="" cppBuildConfig.builtinLibraryObjects="" cppBuildConfig.builtinLibraryPaths="" cppBuildConfig.builtinMacros="RETARGET_VCOM RETARGET_VCOM" moduleId="com.silabs.ide.project.core" projectCommon.buildArtifactType="EXE" projectCommon.referencedModules="[{&quot;module&quot;:&quot;&lt;project:MModule xmlns:project=\&quot;http://www.silabs.com/sls/Project.ecore\&quot; builtin=\&quot;true\&quot; id=\&quot;com.silabs.ember.module.template.external.rail.rail.Silicon Labs RAIL Framework.efr32_base:1.2.0.-256640824\&quot;&gt;\r\n  &lt;inclusions pattern=\&quot;.*\&quot;/&gt;\r\n&lt;/project:MModule&gt;&quot;,&quot;builtinExcludes&quot;:[&quot;CMSIS&quot;],&quot;builtin&quot;:true,&quot;builtinSources&quot;:[&quot;CMSIS/efr32mg1p/startup_gcc_efr32mg1p.s&quot;,&quot;CMSIS/efr32mg1p/startup_iar_efr32mg1p.s&quot;,&quot;CMSIS/efr32mg1p/system_efr32mg1p.c&quot;]},{&quot;module&quot;:&quot;&lt;project:MModule xmlns:project=\&quot;http://www.silabs.com/sls/Project.ecore\&quot; builtin=\&quot;true\&quot; id=\&quot;com.silabs.ember.module.plugin.external.rail.rail.Silicon Labs RAIL Framework.hal-efr32-base.:1.2.0.-256640824\&quot;&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/em_int.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/em_assert.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/em_cmu.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/em_emu.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/em_gpio.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/em_leuart.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/em_usart.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/em_ldma.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/em_rmu.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/em_rtc.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/em_rtcc.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/em_timer.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/em_system.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/rtcdriver.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/ustimer.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/gpiointerrupt.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/hal_common.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/hal_efr.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/bsp_stk_leds.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/bsp_stk.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/bsp_bcc.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/bsp_trace.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/dmactrl.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/retargetserial.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/retargetio.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;hal-efr32(/.*){0,1}/udelay.c\&quot;/&gt;\r\n&lt;/project:MModule&gt;&quot;,&quot;builtinExcludes&quot;:[],&quot;builtin&quot;:true,&quot;builtinSources&quot;:[&quot;hal-efr32/rtcdriver.c&quot;,&quot;hal-efr32/em_emu.c&quot;,&quot;hal-efr32/dmactrl.c&quot;,&quot;hal-efr32/retargetserial.c&quot;,&quot;hal-efr32/em_rtc.c&quot;,&quot;hal-efr32/em_timer.c&quot;,&quot;hal-efr32/bsp_stk.c&quot;,&quot;hal-efr32/gpiointerrupt.c&quot;,&quot;hal-efr32/em_leuart.c&quot;,&quot;hal-efr32/hal_common.c&quot;,&quot;hal-efr32/bsp_stk_leds.c&quot;,&quot;hal-efr32/em_ldma.c&quot;,&quot;hal-efr32/hal_efr.c&quot;,&quot;hal-efr32/em_cmu.c&quot;,&quot;hal-efr32/em_usart.c&quot;,&quot;hal-efr32/ustimer.c&quot;,&quot;hal-efr32/em_gpio.c&quot;,&quot;hal-efr32/retargetio.c&quot;,&quot;hal-efr32/udelay.c&quot;,&quot;hal-efr32/em_rtcc.c&quot;,&quot;hal-efr32/em_int.c&quot;,&quot;hal-efr32/em_system.c&quot;,&quot;hal-efr32/bsp_trace.c&quot;,&quot;hal-efr32/em_assert.c&quot;,&quot;hal-efr32/em_rmu.c&quot;,&quot;hal-efr32/bsp_bcc.c&quot;]},{&quot;module&quot;:&quot;&lt;project:MModule xmlns:project=\&quot;http://www.silabs.com/sls/Project.ecore\&quot; builtin=\&quot;true\&quot; id=\&quot;com.silabs.ember.module.plugin.external.rail.rail.Silicon Labs RAIL Framework.lcd-graphics-base.:1.2.0.-256640824\&quot;&gt;\r\n  &lt;inclusions pattern=\&quot;lcd-graphics(/.*){0,1}/graphics.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;lcd-graphics(/.*){0,1}/display.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;lcd-graphics(/.*){0,1}/displaypalemlib.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;lcd-graphics(/.*){0,1}/displayls013b7dh03.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;lcd-graphics(/.*){0,1}/bmp.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;lcd-graphics(/.*){0,1}/glib.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;lcd-graphics(/.*){0,1}/glib_bitmap.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;lcd-graphics(/.*){0,1}/glib_circle.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;lcd-graphics(/.*){0,1}/glib_font_narrow_6x8.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;lcd-graphics(/.*){0,1}/glib_font_normal_8x8.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;lcd-graphics(/.*){0,1}/glib_font_number_16x20.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;lcd-graphics(/.*){0,1}/glib_line.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;lcd-graphics(/.*){0,1}/glib_polygon.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;lcd-graphics(/.*){0,1}/glib_rectangle.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;lcd-graphics(/.*){0,1}/glib_string.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;lcd-graphics(/.*){0,1}/dmd_display.c\&quot;/&gt;\r\n&lt;/project:MModule&gt;&quot;,&quot;builtinExcludes&quot;:[],&quot;builtin&quot;:true,&quot;builtinSources&quot;:[&quot;lcd-graphics/glib_string.c&quot;,&quot;lcd-graphics/glib_bitmap.c&quot;,&quot;lcd-graphics/graphics.c&quot;,&quot;lcd-graphics/displayls013b7dh03.c&quot;,&quot;lcd-graphics/glib_font_narrow_6x8.c&quot;,&quot;lcd-graphics/glib_font_number_16x20.c&quot;,&quot;lcd-graphics/display.c&quot;,&quot;lcd-graphics/glib_rectangle.c&quot;,&quot;lcd-graphics/glib.c&quot;,&quot;lcd-graphics/glib_line.c&quot;,&quot;lcd-graphics/dmd_display.c&quot;,&quot;lcd-graphics/bmp.c&quot;,&quot;lcd-graphics/displaypalemlib.c&quot;,&quot;lcd-graphics/glib_circle.c&quot;,&quot;lcd-graphics/glib_polygon.c&quot;,&quot;lcd-graphics/glib_font_normal_8x8.c&quot;]},{&quot;module&quot;:&quot;&lt;project:MModule xmlns:project=\&quot;http://www.silabs.com/sls/Project.ecore\&quot; builtin=\&quot;true\&quot; id=\&quot;com.silabs.ember.module.plugin.external.rail.rail.Silicon Labs RAIL Framework.command-interpreter-base.:1.2.0.-256640824\&quot;&gt;\r\n  &lt;inclusions pattern=\&quot;command-interpreter(/.*){0,1}/command_interpreter.c\&quot;/&gt;\r\n&lt;/project:MModule&gt;&quot;,&quot;builtinExcludes&quot;:[],&quot;builtin&quot;:true,&quot;builtinSources&quot;:[&quot;command-interpreter/command_interpreter.c&quot;]},{&quot;module&quot;:&quot;&lt;project:MModule xmlns:project=\&quot;http://www.silabs.com/sls/Project.ecore\&quot; builtin=\&quot;true\&quot; id=\&quot;com.silabs.ember.module.plugin.external.rail.rail.Silicon Labs RAIL Framework.buffer-pool-memory-manager-base.:1.2.0.-256640824\&quot;&gt;\r\n  &lt;inclusions pattern=\&quot;buffer-pool-memory-manager(/.*){0,1}/buffer_pool_allocator.c\&quot;/&gt;\r\n  &lt;inclusions pattern=\&quot;buffer-pool-memory-manager(/.*){0,1}/rail_integration.c\&quot;/&gt;\r\n&lt;/project:MModule&gt;&quot;,&quot;builtinExcludes&quot;:[],&quot;builtin&quot;:true,&quot;builtinSources&quot;:[&quot;buffer-pool-memory-manager/rail_integration.c&quot;,&quot;buffer-pool-memory-manager/buffer_pool_allocator.c&quot;]},{&quot;module&quot;:&quot;&lt;project:MModule xmlns:project=\&quot;http://www.silabs.com/sls/Project.ecore\&quot; builtin=\&quot;true\&quot; id=\&quot;com.silabs.ember.module.plugin.external.rail.rail.Silicon Labs RAIL Framework.response-printf-base.:1.2.0.-256640824\&quot;&gt;\r\n  &lt;inclusions pattern=\&quot;response-printf(/.*){0,1}/response_print.c\&quot;/&gt;\r\n&lt;/project:MModule&gt;&quot;,&quot;builtinExcludes&quot;:[],&quot;builtin&quot;:true,&quot;builtinSources&quot;:[&quot;response-printf/response_print.c&quot;]}]" projectCommon.toolchainId="com.silabs.ide.si32.iar:7.50.2.10312" projectCommon.userSettings="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;project name=&quot;com.silabs.ember.stack.rail.addition&quot; partCompatibility=&quot;com.silabs.mcu.si32.efr32&quot; toolchainCompatibility=&quot;com.silabs.ide.si32.iar com.silabs.ide.si32.gcc&quot; sdkCompatibility=&quot;&quot; propertyScope=&quot;project&quot; contentRoot=&quot;.&quot;&gt;&#13;&#10;  &lt;file name=&quot;rail_config.h&quot; uri=&quot;file:./rail_config.h&quot;/&gt;&#13;&#10;  &lt;file name=&quot;rail_config.c&quot; uri=&quot;file:./rail_config.c&quot;/&gt;&#13;&#10;  &lt;file name=&quot;efr32_radio_configurator_log.txt&quot; uri=&quot;file:./efr32_radio_configurator_log.txt&quot;/&gt;&#13;&#10;  &lt;file name=&quot;rail-board.h&quot; uri=&quot;file:./rail-board.h&quot;/&gt;&#13;&#10;  &lt;file name=&quot;rail-callbacks.h&quot; uri=&quot;file:./rail-callbacks.h&quot;/&gt;&#13;&#10;  &lt;file name=&quot;rail-callback-stubs.c&quot; uri=&quot;file:./rail-callback-stubs.c&quot;/&gt;&#13;&#10;  &lt;file name=&quot;rail-callbacks.c&quot; uri=&quot;file:./rail-callbacks.c&quot;/&gt;&#13;&#10;  &lt;file name=&quot;rail-configuration.h&quot; uri=&quot;file:./rail-configuration.h&quot;/&gt;&#13;&#10;  &lt;file name=&quot;rail_efr32.eww&quot; uri=&quot;file:./rail_efr32.eww&quot;/&gt;&#13;&#10;  &lt;file name=&quot;rail_efr32.ewd&quot; uri=&quot;file:./rail_efr32.ewd&quot;/&gt;&#13;&#10;  &lt;file name=&quot;rail_efr32.ewp&quot; uri=&quot;file:./rail_efr32.ewp&quot;/&gt;&#13;&#10;  &lt;includePath uri=&quot;studio:/sdk/submodules/emdrv/rtcdrv/inc&quot;/&gt;&#13;&#10;  &lt;includePath uri=&quot;studio:/sdk/submodules/emdrv/ustimer/inc&quot;/&gt;&#13;&#10;  &lt;includePath uri=&quot;studio:/sdk/submodules/emdrv/gpiointerrupt/inc&quot;/&gt;&#13;&#10;  &lt;includePath uri=&quot;studio:/sdk/submodules/emdrv/common/inc&quot;/&gt;&#13;&#10;  &lt;includePath uri=&quot;studio:/sdk/submodules/emlib/inc&quot;/&gt;&#13;&#10;  &lt;includePath uri=&quot;studio:/sdk/submodules/kits/common/bsp&quot;/&gt;&#13;&#10;  &lt;includePath uri=&quot;studio:/sdk/submodules/kits/common/drivers&quot;/&gt;&#13;&#10;  &lt;includePath uri=&quot;studio:/sdk/hal/efr32&quot;/&gt;&#13;&#10;  &lt;includePath uri=&quot;studio:/sdk/submodules/rail_lib/common&quot;/&gt;&#13;&#10;  &lt;includePath uri=&quot;studio:/sdk/utils/graphics&quot;/&gt;&#13;&#10;  &lt;includePath uri=&quot;studio:/sdk/submodules/reptile/glib&quot;/&gt;&#13;&#10;  &lt;includePath uri=&quot;studio:/sdk/submodules/reptile/glib/glib&quot;/&gt;&#13;&#10;  &lt;includePath uri=&quot;studio:/sdk/submodules/reptile/glib/dmd&quot;/&gt;&#13;&#10;  &lt;includePath uri=&quot;studio:/sdk/utils/memory_manager&quot;/&gt;&#13;&#10;  &lt;includePath uri=&quot;studio:/sdk/utils/response_print&quot;/&gt;&#13;&#10;  &lt;includePath uri=&quot;studio:/sdk/utils/command_interpreter&quot;/&gt;&#13;&#10;  &lt;includePath uri=&quot;studio:/sdk/submodules/rail_lib/chip/efr32/rf/common/cortex&quot;/&gt;&#13;&#10;  &lt;includePath uri=&quot;studio:/sdk/submodules/rail_lib/chip/efr32&quot;/&gt;&#13;&#10;  &lt;includePath uri=&quot;studio:/sdk/submodules/kits/EFR32MG1_BRD4151A/config&quot;/&gt;&#13;&#10;  &lt;includePath uri=&quot;file:.&quot;/&gt;&#13;&#10;  &lt;macroDefinition name=&quot;EFR32MG1P232F256GM48&quot;/&gt;&#13;&#10;  &lt;macroDefinition languageCompatibility=&quot;c asm&quot; name=&quot;CONFIGURATION_HEADER&quot; value=&quot;&amp;quot;rail-configuration.h&amp;quot;&quot;/&gt;&#13;&#10;  &lt;macroDefinition name=&quot;BOARD_BRD4151A&quot; value=&quot;&quot;/&gt;&#13;&#10;&lt;/project&gt;&#13;&#10;"/>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="com.iar.cdt.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=com.iar.cdt.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="com.silabs.ide.si32.iar.debug#com.silabs.ide.si32.iar:7.50.2.10312" name="IAR ARM - Debug" parent="iar.arm.toolchain.project.exe.configuration.debug.v5.4.0">
+					<folderInfo id="com.silabs.ide.si32.iar.debug#com.silabs.ide.si32.iar:7.50.2.10312." name="/" resourcePath="">
+						<toolChain id="iar.arm.toolchain.project.exe.configuration.debug.toolchain.v5.4.0.1349506604" name="IAR Toolchain for ARM - 6.x" superClass="iar.arm.toolchain.project.exe.configuration.debug.toolchain.v5.4.0">
+							<option id="iar.arm.toolchain.option.cpuCore.v5.4.0.1897438102" name="Processor core:" superClass="iar.arm.toolchain.option.cpuCore.v5.4.0" value="iar.arm.toolchain.option.cpuCore.Cortex-M4F.v5.5.0" valueType="enumerated"/>
+							<option id="iar.arm.toolchain.option.endianMode.v5.4.0.106554885" name="Endian mode:" superClass="iar.arm.toolchain.option.endianMode.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.bigEndianFormat.v5.4.0.525112090" name="Big-endian format:" superClass="iar.arm.toolchain.option.bigEndianFormat.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.printfFormatter.v5.4.0.2011167173" name="Printf formatter:" superClass="iar.arm.toolchain.option.printfFormatter.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.scanfFormatter.v5.4.0.1689322124" name="Scanf formatter:" superClass="iar.arm.toolchain.option.scanfFormatter.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.bufferedOutput.v6.1.0.414368367" name="Buffered terminal output" superClass="iar.arm.toolchain.option.bufferedOutput.v6.1.0"/>
+							<option id="iar.arm.toolchain.option.mfc.v5.5.2.1218579610" name="Enable multi-file compilation" superClass="iar.arm.toolchain.option.mfc.v5.5.2"/>
+							<option id="iar.arm.toolchain.option.fpu.v5.4.0.1261213121" name="FPU:" superClass="iar.arm.toolchain.option.fpu.v5.4.0" value="iar.arm.toolchain.common.option.fpu.VFPv4.v5.5.0" valueType="enumerated"/>
+							<option id="iar.arm.toolchain.option.libraryConfig.v5.4.0.1276947905" name="Library:" superClass="iar.arm.toolchain.option.libraryConfig.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.misra-c.enable.1770626136" name="Enable MISRA-C" superClass="iar.arm.toolchain.option.misra-c.enable"/>
+							<option id="iar.arm.toolchain.option.useCMSIS.v6.2.2.138663107" name="Use CMSIS" superClass="iar.arm.toolchain.option.useCMSIS.v6.2.2"/>
+							<option id="iar.arm.toolchain.option.semihosted.v5.4.0.1666350095" name="Include semihosting interface" superClass="iar.arm.toolchain.option.semihosted.v5.4.0" value="false" valueType="boolean"/>
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF;com.silabs.ide.debug.core.BIN;com.silabs.ide.debug.core.HEX;com.silabs.ide.debug.core.S37" id="iar.arm.toolchain.targetPlatform.v5.4.0.26400457" isAbstract="false" name="IAR Target platform for ARM (ELF)" osList="win32,linux" superClass="iar.arm.toolchain.targetPlatform.v5.4.0"/>
+							<builder buildPath="${workspace_loc:/Test}/IAR ARM - Debug" id="cdt.managedbuild.target.gnu.builder.base.17606492" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="cdt.managedbuild.target.gnu.builder.base"/>
+							<tool id="iar.arm.toolchain.compiler.v5.4.1.1481654461" name="IAR C/C++ Compiler for ARM" superClass="iar.arm.toolchain.compiler.v5.4.1">
+								<option defaultValue="true" id="iar.arm.toolchain.compiler.option.debugInfo.v5.4.0.1077268378" name="Generate debug information" superClass="iar.arm.toolchain.compiler.option.debugInfo.v5.4.0" valueType="boolean"/>
+								<option defaultValue="iar.arm.toolchain.compiler.option.optLevel.none.v5.4.0" id="iar.arm.toolchain.compiler.option.optLevel.v5.4.0.1777364949" name="Optimization level:" superClass="iar.arm.toolchain.compiler.option.optLevel.v5.4.0" valueType="enumerated"/>
+								<option id="iar.arm.toolchain.compiler.option.optCSE.v5.4.0.312045092" name="Disable common subexpression elimination" superClass="iar.arm.toolchain.compiler.option.optCSE.v5.4.0" value="true" valueType="boolean"/>
+								<option id="iar.arm.toolchain.compiler.option.optUnroll.v5.4.0.1810357327" name="Disable loop unrolling" superClass="iar.arm.toolchain.compiler.option.optUnroll.v5.4.0" value="true" valueType="boolean"/>
+								<option id="iar.arm.toolchain.compiler.option.optInline.v5.4.0.740163903" name="Disable function inlining" superClass="iar.arm.toolchain.compiler.option.optInline.v5.4.0" value="true" valueType="boolean"/>
+								<option id="iar.arm.toolchain.compiler.option.optCodeMotion.v5.4.0.684074443" name="Disable code motion" superClass="iar.arm.toolchain.compiler.option.optCodeMotion.v5.4.0" value="true" valueType="boolean"/>
+								<option id="iar.arm.toolchain.compiler.option.optAliasAnalysis.v5.4.0.1126699534" name="Disable type-based alias analysis" superClass="iar.arm.toolchain.compiler.option.optAliasAnalysis.v5.4.0" value="true" valueType="boolean"/>
+								<option id="iar.arm.toolchain.compiler.option.optStaticClustering.v5.4.0.1013092391" name="Disable static clustering" superClass="iar.arm.toolchain.compiler.option.optStaticClustering.v5.4.0" value="true" valueType="boolean"/>
+								<option id="iar.arm.toolchain.compiler.option.optScheduling.v5.4.0.1488134616" name="Disable instruction scheduling" superClass="iar.arm.toolchain.compiler.option.optScheduling.v5.4.0" value="true" valueType="boolean"/>
+								<option id="iar.arm.toolchain.compiler.option.language.v6.1.0.439506350" name="Language" superClass="iar.arm.toolchain.compiler.option.language.v6.1.0"/>
+								<option id="iar.arm.toolchain.compiler.option.cppdialect.v6.1.0.1650016125" name="C++ dialect" superClass="iar.arm.toolchain.compiler.option.cppdialect.v6.1.0"/>
+								<option id="iar.arm.toolchain.compiler.option.cpuMode.v5.4.0.1533672742" name="Processor mode:" superClass="iar.arm.toolchain.compiler.option.cpuMode.v5.4.0" value="iar.arm.toolchain.compiler.option.cpuMode.thumb.v5.4.0" valueType="enumerated"/>
+								<option id="iar.arm.toolchain.compiler.option.suppress.v5.4.0.433610605" name="Suppress these diagnostics:" superClass="iar.arm.toolchain.compiler.option.suppress.v5.4.0" valueType="stringList">
+									<listOptionValue builtIn="false" value="Pa050"/>
+								</option>
+								<option id="iar.arm.toolchain.compiler.option.incPaths.v5.4.0.463297907" name="Additional include directories" superClass="iar.arm.toolchain.compiler.option.incPaths.v5.4.0" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/Users/Szarlej/SimplicityStudio/v3_workspace/Test"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/emdrv/rtcdrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/emdrv/ustimer/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/emdrv/gpiointerrupt/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/emdrv/common/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/emlib/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/kits/common/bsp&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/kits/common/drivers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/hal/efr32&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/rail_lib/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/utils/graphics&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/reptile/glib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/reptile/glib/glib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/reptile/glib/dmd&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/utils/memory_manager&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/utils/response_print&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/utils/command_interpreter&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/rail_lib/chip/efr32/rf/common/cortex&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/kits/EFR32MG1_BRD4151A/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lcd-graphics_inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/CMSIS/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/Device/SiliconLabs/EFR32MG1P/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/rail_lib/chip/efr32&quot;"/>
+								</option>
+								<option id="iar.arm.toolchain.compiler.option.defines.v5.4.0.1207579917" name="Defined Symbols:" superClass="iar.arm.toolchain.compiler.option.defines.v5.4.0" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="EFR32MG1P232F256GM48=1"/>
+									<listOptionValue builtIn="false" value="BOARD_BRD4151A=1"/>
+									<listOptionValue builtIn="false" value="CONFIGURATION_HEADER=&quot;rail-configuration.h&quot;"/>
+									<listOptionValue builtIn="false" value="RETARGET_VCOM=1"/>
+								</option>
+								<inputType id="iar.arm.toolchain.compiler.inputType.v5.4.1.587823873" name="IAR C/C++ Compiler Input Type" superClass="iar.arm.toolchain.compiler.inputType.v5.4.1"/>
+							</tool>
+							<tool id="iar.arm.toolchain.assembler.v5.4.0.1040147863" name="IAR Assembler for ARM" superClass="iar.arm.toolchain.assembler.v5.4.0">
+								<option defaultValue="true" id="iar.arm.toolchain.assembler.option.debugInfo.v5.4.0.964370217" name="Generate debug information" superClass="iar.arm.toolchain.assembler.option.debugInfo.v5.4.0" valueType="boolean"/>
+								<option id="iar.arm.toolchain.assembler.option.includePaths.v5.4.0.1168399656" name="Additional include directories:" superClass="iar.arm.toolchain.assembler.option.includePaths.v5.4.0" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/Users/Szarlej/SimplicityStudio/v3_workspace/Test"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/emdrv/rtcdrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/emdrv/ustimer/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/emdrv/gpiointerrupt/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/emdrv/common/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/emlib/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/kits/common/bsp&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/kits/common/drivers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/hal/efr32&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/rail_lib/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/utils/graphics&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/reptile/glib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/reptile/glib/glib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/reptile/glib/dmd&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/utils/memory_manager&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/utils/response_print&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/utils/command_interpreter&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/rail_lib/chip/efr32/rf/common/cortex&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/kits/EFR32MG1_BRD4151A/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lcd-graphics_inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/CMSIS/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/Device/SiliconLabs/EFR32MG1P/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/submodules/rail_lib/chip/efr32&quot;"/>
+								</option>
+								<option id="iar.arm.toolchain.assembler.option.definedSymbols.v5.4.0.259919636" name="Defined symbols:" superClass="iar.arm.toolchain.assembler.option.definedSymbols.v5.4.0" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="EFR32MG1P232F256GM48=1"/>
+									<listOptionValue builtIn="false" value="BOARD_BRD4151A=1"/>
+									<listOptionValue builtIn="false" value="CONFIGURATION_HEADER=&quot;rail-configuration.h&quot;"/>
+									<listOptionValue builtIn="false" value="RETARGET_VCOM=1"/>
+								</option>
+								<inputType id="iar.arm.toolchain.assembler.inputType.asmFile.v5.4.0.379827116" name="IAR Assembler input type for ARM (asm, s)" superClass="iar.arm.toolchain.assembler.inputType.asmFile.v5.4.0"/>
+							</tool>
+							<tool id="iar.arm.toolchain.linker.v5.4.0.168174951" name="IAR Linker for ARM" superClass="iar.arm.toolchain.linker.v5.4.0">
+								<option id="iar.arm.toolchain.linker.option.icfFile.v5.4.0.28482842" name="Linker configuration file:" superClass="iar.arm.toolchain.linker.option.icfFile.v5.4.0" value="${sdkLocation}/config/generic_cortex.icf" valueType="string"/>
+								<option id="iar.arm.toolchain.linker.option.generateAdditonalOutput.v5.5.2.1639223327" name="Generate additional output" superClass="iar.arm.toolchain.linker.option.generateAdditonalOutput.v5.5.2" value="true" valueType="boolean"/>
+								<option id="iar.arm.toolchain.linker.option.outFormat.v5.5.2.590180889" name="Output format:" superClass="iar.arm.toolchain.linker.option.outFormat.v5.5.2" value="iar.arm.toolchain.linker.option.outFormat.intelExtended.v5.5.2" valueType="enumerated"/>
+								<option id="iar.arm.toolchain.linker.option.additionalLibraries.v5.5.0.250343665" name="Additional libraries" superClass="iar.arm.toolchain.linker.option.additionalLibraries.v5.5.0" valueType="libs">
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="&quot;${StudioSdkPath}/autogen/librail_release/librail_efr32_iar_release.a&quot;"/>
+								</option>
+								<option id="iar.arm.toolchain.linker.option.performVFE.v6.2.2.465159723" name="Perform C++ Virtual Function Elimination" superClass="iar.arm.toolchain.linker.option.performVFE.v6.2.2"/>
+								<option id="iar.arm.toolchain.linker.option.forceVFE.v6.2.2.523263451" name="Even if some modules are missing VFE information" superClass="iar.arm.toolchain.linker.option.forceVFE.v6.2.2"/>
+								<inputType id="iar.arm.toolchain.linker.inputType.object.v5.4.0.997265454" name="IAR Linker Input Type for ARM (o)" superClass="iar.arm.toolchain.linker.inputType.object.v5.4.0">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+								</inputType>
+							</tool>
+							<tool id="iar.arm.toolchain.archive.v5.4.0.1350905808" name="IAR Library Builder for ARM" superClass="iar.arm.toolchain.archive.v5.4.0"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="CMSIS/efr32mg1p/startup_gcc_efr32mg1p.s" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.silabs.ide.si32.iar.release#com.silabs.ide.si32.iar:7.50.2.10312">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.silabs.ide.si32.iar.release#com.silabs.ide.si32.iar:7.50.2.10312" moduleId="org.eclipse.cdt.core.settings" name="IAR ARM - Release">
+				<macros>
+					<stringMacro name="StudioToolchainPath" type="VALUE_PATH_DIR" value="${StudioToolchainPathFromID:com.silabs.ide.si32.iar:7.50.2.10312}"/>
+					<stringMacro name="StudioSdkPath" type="VALUE_PATH_DIR" value="${StudioSdkPathFromID:com.silabs.ember.sdk.external.rail:1.2.0.-256640824}"/>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="com.silabs.ide.debug.core.S37" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.silabs.ide.debug.core.BIN" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.silabs.ide.debug.core.HEX" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.iar.cdt.errorParser.com.iar.cdt.errorParser.ErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule buildConfig.stockConfigId="com.silabs.ide.si32.iar.release#com.silabs.ide.si32.iar:7.50.2.10312" cppBuildConfig.builtinIncludes="" cppBuildConfig.builtinLibraryFiles="" cppBuildConfig.builtinLibraryNames="" cppBuildConfig.builtinLibraryObjects="" cppBuildConfig.builtinLibraryPaths="" cppBuildConfig.builtinMacros="" moduleId="com.silabs.ide.project.core" projectCommon.buildArtifactType="EXE" projectCommon.referencedModules="[]" projectCommon.toolchainId="com.silabs.ide.si32.iar:7.50.2.10312"/>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="com.iar.cdt.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=com.iar.cdt.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="com.silabs.ide.si32.iar.release#com.silabs.ide.si32.iar:7.50.2.10312" name="IAR ARM - Release" parent="iar.arm.toolchain.project.exe.configuration.debug.v5.4.0">
+					<folderInfo id="com.silabs.ide.si32.iar.release#com.silabs.ide.si32.iar:7.50.2.10312." name="/" resourcePath="">
+						<toolChain id="iar.arm.toolchain.project.exe.configuration.debug.toolchain.v5.4.0.1204795089" name="IAR Toolchain for ARM - 6.x" superClass="iar.arm.toolchain.project.exe.configuration.debug.toolchain.v5.4.0">
+							<option id="iar.arm.toolchain.option.cpuCore.v5.4.0.26451905" name="Processor core:" superClass="iar.arm.toolchain.option.cpuCore.v5.4.0" value="iar.arm.toolchain.option.cpuCore.Cortex-M4F.v5.5.0" valueType="enumerated"/>
+							<option id="iar.arm.toolchain.option.endianMode.v5.4.0.2127088915" name="Endian mode:" superClass="iar.arm.toolchain.option.endianMode.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.bigEndianFormat.v5.4.0.1704195341" name="Big-endian format:" superClass="iar.arm.toolchain.option.bigEndianFormat.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.printfFormatter.v5.4.0.1496235960" name="Printf formatter:" superClass="iar.arm.toolchain.option.printfFormatter.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.scanfFormatter.v5.4.0.1531777973" name="Scanf formatter:" superClass="iar.arm.toolchain.option.scanfFormatter.v5.4.0"/>
+							<option id="iar.arm.toolchain.option.bufferedOutput.v6.1.0.1353033136" name="Buffered terminal output" superClass="iar.arm.toolchain.option.bufferedOutput.v6.1.0"/>
+							<option id="iar.arm.toolchain.option.mfc.v5.5.2.622399845" name="Enable multi-file compilation" superClass="iar.arm.toolchain.option.mfc.v5.5.2"/>
+							<option id="iar.arm.toolchain.option.semihosted.v5.4.0.1051017074" name="Include semihosting interface" superClass="iar.arm.toolchain.option.semihosted.v5.4.0" value="false" valueType="boolean"/>
+							<option id="iar.arm.toolchain.option.fpu.v5.4.0.926811800" name="FPU:" superClass="iar.arm.toolchain.option.fpu.v5.4.0" value="iar.arm.toolchain.common.option.fpu.VFPv4.v5.5.0" valueType="enumerated"/>
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF;com.silabs.ide.debug.core.BIN;com.silabs.ide.debug.core.HEX;com.silabs.ide.debug.core.S37" id="iar.arm.toolchain.targetPlatform.v5.4.0.21441863" isAbstract="false" name="IAR Target platform for ARM (ELF)" osList="win32,linux" superClass="iar.arm.toolchain.targetPlatform.v5.4.0"/>
+							<builder buildPath="${workspace_loc:/Test}/IAR ARM - Release" id="cdt.managedbuild.target.gnu.builder.base.2080420848" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="cdt.managedbuild.target.gnu.builder.base"/>
+							<tool id="iar.arm.toolchain.compiler.v5.4.1.374326226" name="IAR C/C++ Compiler for ARM" superClass="iar.arm.toolchain.compiler.v5.4.1">
+								<option defaultValue="true" id="iar.arm.toolchain.compiler.option.debugInfo.v5.4.0.233235585" name="Generate debug information" superClass="iar.arm.toolchain.compiler.option.debugInfo.v5.4.0" value="false" valueType="boolean"/>
+								<option defaultValue="iar.arm.toolchain.compiler.option.optLevel.none.v5.4.0" id="iar.arm.toolchain.compiler.option.optLevel.v5.4.0.185366817" name="Optimization level:" superClass="iar.arm.toolchain.compiler.option.optLevel.v5.4.0" value="iar.arm.toolchain.compiler.option.optLevel.medium.v5.4.0" valueType="enumerated"/>
+								<option id="iar.arm.toolchain.compiler.option.optCSE.v5.4.0.160397503" name="Disable common subexpression elimination" superClass="iar.arm.toolchain.compiler.option.optCSE.v5.4.0" value="true" valueType="boolean"/>
+								<option id="iar.arm.toolchain.compiler.option.optUnroll.v5.4.0.1636393117" name="Disable loop unrolling" superClass="iar.arm.toolchain.compiler.option.optUnroll.v5.4.0" value="true" valueType="boolean"/>
+								<option id="iar.arm.toolchain.compiler.option.optInline.v5.4.0.1421129180" name="Disable function inlining" superClass="iar.arm.toolchain.compiler.option.optInline.v5.4.0" value="true" valueType="boolean"/>
+								<option id="iar.arm.toolchain.compiler.option.optCodeMotion.v5.4.0.369693495" name="Disable code motion" superClass="iar.arm.toolchain.compiler.option.optCodeMotion.v5.4.0" value="true" valueType="boolean"/>
+								<option id="iar.arm.toolchain.compiler.option.optAliasAnalysis.v5.4.0.1692107080" name="Disable type-based alias analysis" superClass="iar.arm.toolchain.compiler.option.optAliasAnalysis.v5.4.0" value="true" valueType="boolean"/>
+								<option id="iar.arm.toolchain.compiler.option.optStaticClustering.v5.4.0.861605521" name="Disable static clustering" superClass="iar.arm.toolchain.compiler.option.optStaticClustering.v5.4.0" value="true" valueType="boolean"/>
+								<option id="iar.arm.toolchain.compiler.option.optScheduling.v5.4.0.1910621105" name="Disable instruction scheduling" superClass="iar.arm.toolchain.compiler.option.optScheduling.v5.4.0" value="true" valueType="boolean"/>
+								<option id="iar.arm.toolchain.compiler.option.cpuMode.v5.4.0.1328225943" name="Processor mode:" superClass="iar.arm.toolchain.compiler.option.cpuMode.v5.4.0" value="iar.arm.toolchain.compiler.option.cpuMode.thumb.v5.4.0" valueType="enumerated"/>
+								<option id="iar.arm.toolchain.compiler.option.incPaths.v5.4.0.846007283" name="Additional include directories" superClass="iar.arm.toolchain.compiler.option.incPaths.v5.4.0" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lcd-graphics_inc}&quot;"/>
+								</option>
+								<inputType id="iar.arm.toolchain.compiler.inputType.v5.4.1.1787206989" name="IAR C/C++ Compiler Input Type" superClass="iar.arm.toolchain.compiler.inputType.v5.4.1"/>
+							</tool>
+							<tool id="iar.arm.toolchain.assembler.v5.4.0.357384666" name="IAR Assembler for ARM" superClass="iar.arm.toolchain.assembler.v5.4.0">
+								<option defaultValue="true" id="iar.arm.toolchain.assembler.option.debugInfo.v5.4.0.959991830" name="Generate debug information" superClass="iar.arm.toolchain.assembler.option.debugInfo.v5.4.0" valueType="boolean"/>
+								<option id="iar.arm.toolchain.assembler.option.includePaths.v5.4.0.219094837" name="Additional include directories:" superClass="iar.arm.toolchain.assembler.option.includePaths.v5.4.0" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lcd-graphics_inc}&quot;"/>
+								</option>
+								<inputType id="iar.arm.toolchain.assembler.inputType.asmFile.v5.4.0.534092039" name="IAR Assembler input type for ARM (asm, s)" superClass="iar.arm.toolchain.assembler.inputType.asmFile.v5.4.0"/>
+							</tool>
+							<tool id="iar.arm.toolchain.linker.v5.4.0.898647117" name="IAR Linker for ARM" superClass="iar.arm.toolchain.linker.v5.4.0">
+								<option id="iar.arm.toolchain.linker.option.icfFile.v5.4.0.92140639" name="Linker configuration file:" superClass="iar.arm.toolchain.linker.option.icfFile.v5.4.0" value="${sdkLocation}/config/generic_cortex.icf" valueType="string"/>
+								<option id="iar.arm.toolchain.linker.option.generateAdditonalOutput.v5.5.2.2041099270" name="Generate additional output" superClass="iar.arm.toolchain.linker.option.generateAdditonalOutput.v5.5.2" value="true" valueType="boolean"/>
+								<option id="iar.arm.toolchain.linker.option.outFormat.v5.5.2.266462334" name="Output format:" superClass="iar.arm.toolchain.linker.option.outFormat.v5.5.2" value="iar.arm.toolchain.linker.option.outFormat.intelExtended.v5.5.2" valueType="enumerated"/>
+								<inputType id="iar.arm.toolchain.linker.inputType.object.v5.4.0.795811266" name="IAR Linker Input Type for ARM (o)" superClass="iar.arm.toolchain.linker.inputType.object.v5.4.0">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+								</inputType>
+							</tool>
+							<tool id="iar.arm.toolchain.archive.v5.4.0.1817567449" name="IAR Library Builder for ARM" superClass="iar.arm.toolchain.archive.v5.4.0"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="lcd-graphics|CMSIS|hal-efr32|command-interpreter|buffer-pool-memory-manager|response-printf" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.silabs.ide.si32.gcc.debug#com.silabs.ide.si32.gcc:4.8.3.20131129">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.silabs.ide.si32.gcc.debug#com.silabs.ide.si32.gcc:4.8.3.20131129" moduleId="org.eclipse.cdt.core.settings" name="GNU ARM v4.8.3 - Debug">
+				<macros>
+					<stringMacro name="StudioToolchainPath" type="VALUE_PATH_DIR" value="${StudioToolchainPathFromID:com.silabs.ide.si32.gcc:4.8.3.20131129}"/>
+					<stringMacro name="StudioSdkPath" type="VALUE_PATH_DIR" value="${StudioSdkPathFromID:com.silabs.ember.sdk.external.rail:1.2.0.-256640824}"/>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="com.silabs.ide.debug.core.S37" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.silabs.ide.debug.core.BIN" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.silabs.ide.debug.core.HEX" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule buildConfig.stockConfigId="com.silabs.ide.si32.gcc.debug#com.silabs.ide.si32.gcc:4.8.3.20131129" cppBuildConfig.builtinIncludes="" cppBuildConfig.builtinLibraryFiles="" cppBuildConfig.builtinLibraryNames="" cppBuildConfig.builtinLibraryObjects="" cppBuildConfig.builtinLibraryPaths="" cppBuildConfig.builtinMacros="" moduleId="com.silabs.ide.project.core" projectCommon.buildArtifactType="EXE" projectCommon.referencedModules="[]" projectCommon.toolchainId="com.silabs.ide.si32.gcc:4.8.3.20131129"/>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="" id="com.silabs.ide.si32.gcc.debug#com.silabs.ide.si32.gcc:4.8.3.20131129" name="GNU ARM v4.8.3 - Debug" parent="com.silabs.ide.si32.gcc.cdt.managedbuild.config.gnu.exe">
+					<folderInfo id="com.silabs.ide.si32.gcc.debug#com.silabs.ide.si32.gcc:4.8.3.20131129." name="/" resourcePath="">
+						<toolChain id="com.silabs.ide.si32.gcc.cdt.managedbuild.toolchain.exe.1590712561" name="Si32 GNU ARM" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.toolchain.exe">
+							<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.toolchain.debug.level.1163185769" name="Debug Level" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.toolchain.debug.level" value="com.silabs.ide.si32.gcc.cdt.managedbuild.toolchain.debug.level.default" valueType="enumerated"/>
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.GNU_ELF;com.silabs.ide.debug.core.BIN;com.silabs.ide.debug.core.HEX;com.silabs.ide.debug.core.S37" id="com.silabs.ide.si32.gcc.cdt.managedbuild.target.gnu.platform.base.1931666567" isAbstract="false" name="Debug Platform" osList="win32,linux,macosx" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.target.gnu.platform.base"/>
+							<builder buildPath="${workspace_loc:/Test}/GNU ARM v4.8.3 - Debug" id="com.silabs.ide.si32.gcc.cdt.managedbuild.target.gnu.builder.base.465899143" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Si32 GNU ARM Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.target.gnu.builder.base"/>
+							<tool id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base.1207269597" name="GNU ARM C Compiler" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base">
+								<option id="gnu.c.compiler.option.optimization.level.1126259015" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" value="gnu.c.optimization.level.none" valueType="enumerated"/>
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.def.symbols.27193818" name="Defined symbols (-D)" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.def.symbols"/>
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.debug.builtin.1935622744" name="Always branch to builtin functions (-fno-builtin)" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.debug.builtin" value="true" valueType="boolean"/>
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.debug.prolog.1071983034" name="Generate debugger-friendly prologs (-mno-sched-prolog)" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.debug.prolog" value="true" valueType="boolean"/>
+								<option id="gnu.c.compiler.option.preprocessor.undef.symbol.1680994052" name="Undefined symbols (-U)" superClass="gnu.c.compiler.option.preprocessor.undef.symbol" valueType="undefDefinedSymbols">
+									<listOptionValue builtIn="false" value="__INT_FAST32_MAX__"/>
+									<listOptionValue builtIn="false" value="__SIG_ATOMIC_MAX__"/>
+									<listOptionValue builtIn="false" value="__FLT_EPSILON__"/>
+									<listOptionValue builtIn="false" value="__DEC64_MANT_DIG__"/>
+									<listOptionValue builtIn="false" value="__i586"/>
+									<listOptionValue builtIn="false" value="__DBL_MIN__"/>
+									<listOptionValue builtIn="false" value="__INT_LEAST64_TYPE__"/>
+									<listOptionValue builtIn="false" value="__SCHAR_MAX__"/>
+									<listOptionValue builtIn="false" value="__DEC128_MANT_DIG__"/>
+									<listOptionValue builtIn="false" value="__i586__"/>
+									<listOptionValue builtIn="false" value="__GCC_ATOMIC_INT_LOCK_FREE"/>
+									<listOptionValue builtIn="false" value="__UINTPTR_TYPE__"/>
+									<listOptionValue builtIn="false" value="__DBL_MIN_10_EXP__"/>
+									<listOptionValue builtIn="false" value="__GCC_IEC_559"/>
+									<listOptionValue builtIn="false" value="__DBL_DENORM_MIN__"/>
+									<listOptionValue builtIn="false" value="_stdcall"/>
+									<listOptionValue builtIn="false" value="__DBL_HAS_DENORM__"/>
+									<listOptionValue builtIn="false" value="__SHRT_MAX__"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_WCHAR_T__"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_PTRDIFF_T__"/>
+									<listOptionValue builtIn="false" value="__GXX_TYPEINFO_EQUALITY_INLINE"/>
+									<listOptionValue builtIn="false" value="__DEC32_MAX__"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_DOUBLE__"/>
+									<listOptionValue builtIn="false" value="__WINNT__"/>
+									<listOptionValue builtIn="false" value="__FLT_MIN_EXP__"/>
+									<listOptionValue builtIn="false" value="__LDBL_MANT_DIG__"/>
+									<listOptionValue builtIn="false" value="__DEC32_EPSILON__"/>
+									<listOptionValue builtIn="false" value="__INTPTR_MAX__"/>
+									<listOptionValue builtIn="false" value="__LDBL_DIG__"/>
+									<listOptionValue builtIn="false" value="__INT_LEAST8_MAX__"/>
+									<listOptionValue builtIn="false" value="__DEC128_MAX__"/>
+									<listOptionValue builtIn="false" value="__LDBL_DENORM_MIN__"/>
+									<listOptionValue builtIn="false" value="__DEC32_MIN_EXP__"/>
+									<listOptionValue builtIn="false" value="WIN32"/>
+									<listOptionValue builtIn="false" value="__INT_FAST8_MAX__"/>
+									<listOptionValue builtIn="false" value="__UINT_LEAST8_MAX__"/>
+									<listOptionValue builtIn="false" value="__pentium__"/>
+									<listOptionValue builtIn="false" value="__WINNT"/>
+									<listOptionValue builtIn="false" value="__cdecl"/>
+									<listOptionValue builtIn="false" value="__GNUC_PATCHLEVEL__"/>
+									<listOptionValue builtIn="false" value="__DEC32_SUBNORMAL_MIN__"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_POINTER__"/>
+									<listOptionValue builtIn="false" value="__WINT_MAX__"/>
+									<listOptionValue builtIn="false" value="__LDBL_HAS_INFINITY__"/>
+									<listOptionValue builtIn="false" value="__FLT_MAX_10_EXP__"/>
+									<listOptionValue builtIn="false" value="__DEC64_MIN_EXP__"/>
+									<listOptionValue builtIn="false" value="__ATOMIC_ACQ_REL"/>
+									<listOptionValue builtIn="false" value="__DEC32_MIN__"/>
+									<listOptionValue builtIn="false" value="__i386"/>
+									<listOptionValue builtIn="false" value="__LDBL_MIN_10_EXP__"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_LONG_LONG__"/>
+									<listOptionValue builtIn="false" value="__UINT_FAST8_MAX__"/>
+									<listOptionValue builtIn="false" value="__DEC64_MAX_EXP__"/>
+									<listOptionValue builtIn="false" value="_INTEGRAL_MAX_BITS"/>
+									<listOptionValue builtIn="false" value="__GXX_MERGED_TYPEINFO_NAMES"/>
+									<listOptionValue builtIn="false" value="__UINT16_C(c)"/>
+									<listOptionValue builtIn="false" value="__INT16_MAX__"/>
+									<listOptionValue builtIn="false" value="__LDBL_MAX_EXP__"/>
+									<listOptionValue builtIn="false" value="__UINT_LEAST64_MAX__"/>
+									<listOptionValue builtIn="false" value="__FLT_MANT_DIG__"/>
+									<listOptionValue builtIn="false" value="__FLT_RADIX__"/>
+									<listOptionValue builtIn="false" value="__INTMAX_C(c)"/>
+									<listOptionValue builtIn="false" value="__FLT_DIG__"/>
+									<listOptionValue builtIn="false" value="__UINT8_MAX__"/>
+									<listOptionValue builtIn="false" value="__INTMAX_TYPE__"/>
+									<listOptionValue builtIn="false" value="__code_model_32__"/>
+									<listOptionValue builtIn="false" value="__LDBL_MIN_EXP__"/>
+									<listOptionValue builtIn="false" value="__INT_LEAST32_TYPE__"/>
+									<listOptionValue builtIn="false" value="__UINT32_MAX__"/>
+									<listOptionValue builtIn="false" value="__LONG_LONG_MAX__"/>
+									<listOptionValue builtIn="false" value="__DBL_HAS_INFINITY__"/>
+									<listOptionValue builtIn="false" value="__UINT32_C(c)"/>
+									<listOptionValue builtIn="false" value="__DBL_MAX_10_EXP__"/>
+									<listOptionValue builtIn="false" value="__FLT_HAS_QUIET_NAN__"/>
+									<listOptionValue builtIn="false" value="__SIG_ATOMIC_TYPE__"/>
+									<listOptionValue builtIn="false" value="__FLT_HAS_DENORM__"/>
+									<listOptionValue builtIn="false" value="__NO_INLINE__"/>
+									<listOptionValue builtIn="false" value="__INT_LEAST16_MAX__"/>
+									<listOptionValue builtIn="false" value="__DEC128_EPSILON__"/>
+									<listOptionValue builtIn="false" value="__FLT_DECIMAL_DIG__"/>
+									<listOptionValue builtIn="false" value="__GNUC__"/>
+									<listOptionValue builtIn="false" value="__INT_LEAST8_TYPE__"/>
+									<listOptionValue builtIn="false" value="__GCC_ATOMIC_WCHAR_T_LOCK_FREE"/>
+									<listOptionValue builtIn="false" value="__GCC_ATOMIC_LONG_LOCK_FREE"/>
+									<listOptionValue builtIn="false" value="__DEC128_MIN_EXP__"/>
+									<listOptionValue builtIn="false" value="__fastcall"/>
+									<listOptionValue builtIn="false" value="__UINT_FAST64_TYPE__"/>
+									<listOptionValue builtIn="false" value="__GCC_IEC_559_COMPLEX"/>
+									<listOptionValue builtIn="false" value="__INTPTR_TYPE__"/>
+									<listOptionValue builtIn="false" value="__INT64_TYPE__"/>
+									<listOptionValue builtIn="false" value="__DBL_MAX_EXP__"/>
+									<listOptionValue builtIn="false" value="__ATOMIC_ACQUIRE"/>
+									<listOptionValue builtIn="false" value="__WINT_TYPE__"/>
+									<listOptionValue builtIn="false" value="__FLOAT_WORD_ORDER__"/>
+									<listOptionValue builtIn="false" value="__DEC64_SUBNORMAL_MIN__"/>
+									<listOptionValue builtIn="false" value="__ATOMIC_CONSUME"/>
+									<listOptionValue builtIn="false" value="__INT_FAST32_TYPE__"/>
+									<listOptionValue builtIn="false" value="__has_include(STR)"/>
+									<listOptionValue builtIn="false" value="__UINT_FAST8_TYPE__"/>
+									<listOptionValue builtIn="false" value="__PTRDIFF_MAX__"/>
+									<listOptionValue builtIn="false" value="__GCC_ATOMIC_BOOL_LOCK_FREE"/>
+									<listOptionValue builtIn="false" value="__INT_LEAST16_TYPE__"/>
+									<listOptionValue builtIn="false" value="__thiscall"/>
+									<listOptionValue builtIn="false" value="__SIZE_TYPE__"/>
+									<listOptionValue builtIn="false" value="__DEC32_MANT_DIG__"/>
+									<listOptionValue builtIn="false" value="__ATOMIC_RELAXED"/>
+									<listOptionValue builtIn="false" value="__DBL_MAX__"/>
+									<listOptionValue builtIn="false" value="__GCC_ATOMIC_TEST_AND_SET_TRUEVAL"/>
+									<listOptionValue builtIn="false" value="__INT_FAST16_MAX__"/>
+									<listOptionValue builtIn="false" value="__UINT16_MAX__"/>
+									<listOptionValue builtIn="false" value="__UINT_LEAST8_TYPE__"/>
+									<listOptionValue builtIn="false" value="__UINT_FAST32_TYPE__"/>
+									<listOptionValue builtIn="false" value="__stdcall"/>
+									<listOptionValue builtIn="false" value="__pentium"/>
+									<listOptionValue builtIn="false" value="__FLT_EVAL_METHOD__"/>
+									<listOptionValue builtIn="false" value="__UINT16_TYPE__"/>
+									<listOptionValue builtIn="false" value="_X86_"/>
+									<listOptionValue builtIn="false" value="__UINT32_TYPE__"/>
+									<listOptionValue builtIn="false" value="__PRAGMA_REDEFINE_EXTNAME"/>
+									<listOptionValue builtIn="false" value="__FLT_MAX_EXP__"/>
+									<listOptionValue builtIn="false" value="__UINT_FAST16_MAX__"/>
+									<listOptionValue builtIn="false" value="__LDBL_EPSILON__"/>
+									<listOptionValue builtIn="false" value="__DEC64_MIN__"/>
+									<listOptionValue builtIn="false" value="__UINT64_C(c)"/>
+									<listOptionValue builtIn="false" value="__WIN32"/>
+									<listOptionValue builtIn="false" value="__REGISTER_PREFIX__"/>
+									<listOptionValue builtIn="false" value="__INT_FAST8_TYPE__"/>
+									<listOptionValue builtIn="false" value="__ORDER_LITTLE_ENDIAN__"/>
+									<listOptionValue builtIn="false" value="__LDBL_HAS_QUIET_NAN__"/>
+									<listOptionValue builtIn="false" value="__INT8_MAX__"/>
+									<listOptionValue builtIn="false" value="__FLT_DENORM_MIN__"/>
+									<listOptionValue builtIn="false" value="__CHAR32_TYPE__"/>
+									<listOptionValue builtIn="false" value="__WCHAR_MIN__"/>
+									<listOptionValue builtIn="false" value="__UINTMAX_MAX__"/>
+									<listOptionValue builtIn="false" value="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_8"/>
+									<listOptionValue builtIn="false" value="i386"/>
+									<listOptionValue builtIn="false" value="__ATOMIC_HLE_RELEASE"/>
+									<listOptionValue builtIn="false" value="__FLT_MIN_10_EXP__"/>
+									<listOptionValue builtIn="false" value="__UINTPTR_MAX__"/>
+									<listOptionValue builtIn="false" value="__UINT64_MAX__"/>
+									<listOptionValue builtIn="false" value="__WCHAR_MAX__"/>
+									<listOptionValue builtIn="false" value="__ATOMIC_HLE_ACQUIRE"/>
+									<listOptionValue builtIn="false" value="__INT_FAST16_TYPE__"/>
+									<listOptionValue builtIn="false" value="__LDBL_HAS_DENORM__"/>
+									<listOptionValue builtIn="false" value="__GXX_ABI_VERSION"/>
+									<listOptionValue builtIn="false" value="__ATOMIC_RELEASE"/>
+									<listOptionValue builtIn="false" value="__UINTMAX_C(c)"/>
+									<listOptionValue builtIn="false" value="__GCC_ATOMIC_POINTER_LOCK_FREE"/>
+									<listOptionValue builtIn="false" value="__INT_LEAST64_MAX__"/>
+									<listOptionValue builtIn="false" value="__DBL_MIN_EXP__"/>
+									<listOptionValue builtIn="false" value="__UINT_LEAST32_TYPE__"/>
+									<listOptionValue builtIn="false" value="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4"/>
+									<listOptionValue builtIn="false" value="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_LONG_DOUBLE__"/>
+									<listOptionValue builtIn="false" value="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2"/>
+									<listOptionValue builtIn="false" value="__SIZE_MAX__"/>
+									<listOptionValue builtIn="false" value="__UINT_FAST32_MAX__"/>
+									<listOptionValue builtIn="false" value="WINNT"/>
+									<listOptionValue builtIn="false" value="__INT_FAST64_MAX__"/>
+									<listOptionValue builtIn="false" value="_WIN32"/>
+									<listOptionValue builtIn="false" value="__DBL_DECIMAL_DIG__"/>
+									<listOptionValue builtIn="false" value="_cdecl"/>
+									<listOptionValue builtIn="false" value="__SIG_ATOMIC_MIN__"/>
+									<listOptionValue builtIn="false" value="__FLT_MIN__"/>
+									<listOptionValue builtIn="false" value="__GCC_ATOMIC_CHAR32_T_LOCK_FREE"/>
+									<listOptionValue builtIn="false" value="__DBL_EPSILON__"/>
+									<listOptionValue builtIn="false" value="__UINT_FAST64_MAX__"/>
+									<listOptionValue builtIn="false" value="__DEC128_MAX_EXP__"/>
+									<listOptionValue builtIn="false" value="__MINGW32__"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_SIZE_T__"/>
+									<listOptionValue builtIn="false" value="__DBL_DIG__"/>
+									<listOptionValue builtIn="false" value="__UINT_LEAST16_MAX__"/>
+									<listOptionValue builtIn="false" value="__GNUC_MINOR__"/>
+									<listOptionValue builtIn="false" value="__ORDER_PDP_ENDIAN__"/>
+									<listOptionValue builtIn="false" value="__DEC64_MAX__"/>
+									<listOptionValue builtIn="false" value="__BIGGEST_ALIGNMENT__"/>
+									<listOptionValue builtIn="false" value="__UINT_LEAST16_TYPE__"/>
+									<listOptionValue builtIn="false" value="__DECIMAL_BID_FORMAT__"/>
+									<listOptionValue builtIn="false" value="__GCC_ATOMIC_SHORT_LOCK_FREE"/>
+									<listOptionValue builtIn="false" value="__WINT_MIN__"/>
+									<listOptionValue builtIn="false" value="_thiscall"/>
+									<listOptionValue builtIn="false" value="__INT16_C(c)"/>
+									<listOptionValue builtIn="false" value="__INT64_MAX__"/>
+									<listOptionValue builtIn="false" value="__INT_MAX__"/>
+									<listOptionValue builtIn="false" value="__DEC64_EPSILON__"/>
+									<listOptionValue builtIn="false" value="__INT32_C(c)"/>
+									<listOptionValue builtIn="false" value="__INT32_TYPE__"/>
+									<listOptionValue builtIn="false" value="__INT_LEAST32_MAX__"/>
+									<listOptionValue builtIn="false" value="__STDC__"/>
+									<listOptionValue builtIn="false" value="__LDBL_MIN__"/>
+									<listOptionValue builtIn="false" value="__MSVCRT__"/>
+									<listOptionValue builtIn="false" value="__INT8_TYPE__"/>
+									<listOptionValue builtIn="false" value="__BYTE_ORDER__"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_FLOAT__"/>
+									<listOptionValue builtIn="false" value="__INTMAX_MAX__"/>
+									<listOptionValue builtIn="false" value="__GCC_ATOMIC_LLONG_LOCK_FREE"/>
+									<listOptionValue builtIn="false" value="__INT_FAST64_TYPE__"/>
+									<listOptionValue builtIn="false" value="__UINT64_TYPE__"/>
+									<listOptionValue builtIn="false" value="__DEC32_MAX_EXP__"/>
+									<listOptionValue builtIn="false" value="__ATOMIC_SEQ_CST"/>
+									<listOptionValue builtIn="false" value="__WIN32__"/>
+									<listOptionValue builtIn="false" value="__INT32_MAX__"/>
+									<listOptionValue builtIn="false" value="__VERSION__"/>
+									<listOptionValue builtIn="false" value="__INT64_C(c)"/>
+									<listOptionValue builtIn="false" value="__GCC_ATOMIC_CHAR_LOCK_FREE"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_WINT_T__"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_INT__"/>
+									<listOptionValue builtIn="false" value="__USER_LABEL_PREFIX__"/>
+									<listOptionValue builtIn="false" value="__LONG_MAX__"/>
+									<listOptionValue builtIn="false" value="__INT16_TYPE__"/>
+									<listOptionValue builtIn="false" value="__INT8_C(c)"/>
+									<listOptionValue builtIn="false" value="__ORDER_BIG_ENDIAN__"/>
+									<listOptionValue builtIn="false" value="__UINT_LEAST32_MAX__"/>
+									<listOptionValue builtIn="false" value="__PTRDIFF_TYPE__"/>
+									<listOptionValue builtIn="false" value="__CHAR_BIT__"/>
+									<listOptionValue builtIn="false" value="__i386__"/>
+									<listOptionValue builtIn="false" value="__UINT8_C(c)"/>
+									<listOptionValue builtIn="false" value="__DEC128_SUBNORMAL_MIN__"/>
+									<listOptionValue builtIn="false" value="__has_include_next(STR)"/>
+									<listOptionValue builtIn="false" value="__DBL_HAS_QUIET_NAN__"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_SHORT__"/>
+									<listOptionValue builtIn="false" value="__DEC_EVAL_METHOD__"/>
+									<listOptionValue builtIn="false" value="__DBL_MANT_DIG__"/>
+									<listOptionValue builtIn="false" value="__FLT_MAX__"/>
+									<listOptionValue builtIn="false" value="__UINT_FAST16_TYPE__"/>
+									<listOptionValue builtIn="false" value="__UINT_LEAST64_TYPE__"/>
+									<listOptionValue builtIn="false" value="__GNUC_GNU_INLINE__"/>
+									<listOptionValue builtIn="false" value="__DEC128_MIN__"/>
+									<listOptionValue builtIn="false" value="_fastcall"/>
+									<listOptionValue builtIn="false" value="__declspec(x)"/>
+									<listOptionValue builtIn="false" value="__FLT_HAS_INFINITY__"/>
+									<listOptionValue builtIn="false" value="__UINT8_TYPE__"/>
+									<listOptionValue builtIn="false" value="__GCC_HAVE_DWARF2_CFI_ASM"/>
+									<listOptionValue builtIn="false" value="__STDC_HOSTED__"/>
+									<listOptionValue builtIn="false" value="__DECIMAL_DIG__"/>
+									<listOptionValue builtIn="false" value="__LDBL_MAX_10_EXP__"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_LONG__"/>
+									<listOptionValue builtIn="false" value="__UINTMAX_TYPE__"/>
+									<listOptionValue builtIn="false" value="__LDBL_MAX__"/>
+									<listOptionValue builtIn="false" value="__FINITE_MATH_ONLY__"/>
+									<listOptionValue builtIn="false" value="__WCHAR_TYPE__"/>
+									<listOptionValue builtIn="false" value="__GCC_ATOMIC_CHAR16_T_LOCK_FREE"/>
+									<listOptionValue builtIn="false" value="__CHAR16_TYPE__"/>
+								</option>
+								<option id="gnu.c.compiler.option.include.paths.1453174324" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lcd-graphics_inc}&quot;"/>
+								</option>
+								<inputType id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.input.1424209650" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.base.1914610892" name="GNU ARM C++ Compiler" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.base">
+								<option id="gnu.cpp.compiler.option.optimization.level.307848733" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.debug.builtin.1992031141" name="Always branch to builtin functions (-fno-builtin)" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.debug.builtin" value="true" valueType="boolean"/>
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.debug.prolog.277551417" name="Generate debugger-friendly prologs (-mno-sched-prolog)" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.debug.prolog" value="true" valueType="boolean"/>
+							</tool>
+							<tool id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.assembler.base.1296400765" name="GNU ARM Assembler" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.assembler.base">
+								<option id="gnu.both.asm.option.include.paths.1247623989" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lcd-graphics_inc}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1580741331" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+							<tool id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.base.944051532" name="GNU ARM C Linker" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.593827505" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.linker.base.1835313221" name="GNU ARM C++ Linker" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.linker.base"/>
+							<tool id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.archiver.base.7214268" name="GNU ARM Archiver" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.archiver.base"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="CMSIS/efr32mg1p/startup_iar_efr32mg1p.s|lcd-graphics|CMSIS|hal-efr32|command-interpreter|buffer-pool-memory-manager|response-printf" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.silabs.ide.si32.gcc.release#com.silabs.ide.si32.gcc:4.8.3.20131129">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.silabs.ide.si32.gcc.release#com.silabs.ide.si32.gcc:4.8.3.20131129" moduleId="org.eclipse.cdt.core.settings" name="GNU ARM v4.8.3 - Release">
+				<macros>
+					<stringMacro name="StudioToolchainPath" type="VALUE_PATH_DIR" value="${StudioToolchainPathFromID:com.silabs.ide.si32.gcc:4.8.3.20131129}"/>
+					<stringMacro name="StudioSdkPath" type="VALUE_PATH_DIR" value="${StudioSdkPathFromID:com.silabs.ember.sdk.external.rail:1.2.0.-256640824}"/>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="com.silabs.ide.debug.core.S37" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.silabs.ide.debug.core.BIN" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.silabs.ide.debug.core.HEX" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule buildConfig.stockConfigId="com.silabs.ide.si32.gcc.release#com.silabs.ide.si32.gcc:4.8.3.20131129" cppBuildConfig.builtinIncludes="" cppBuildConfig.builtinLibraryFiles="" cppBuildConfig.builtinLibraryNames="" cppBuildConfig.builtinLibraryObjects="" cppBuildConfig.builtinLibraryPaths="" cppBuildConfig.builtinMacros="" moduleId="com.silabs.ide.project.core" projectCommon.buildArtifactType="EXE" projectCommon.referencedModules="[]" projectCommon.toolchainId="com.silabs.ide.si32.gcc:4.8.3.20131129"/>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="" id="com.silabs.ide.si32.gcc.release#com.silabs.ide.si32.gcc:4.8.3.20131129" name="GNU ARM v4.8.3 - Release" parent="com.silabs.ide.si32.gcc.cdt.managedbuild.config.gnu.exe">
+					<folderInfo id="com.silabs.ide.si32.gcc.release#com.silabs.ide.si32.gcc:4.8.3.20131129." name="/" resourcePath="">
+						<toolChain id="com.silabs.ide.si32.gcc.cdt.managedbuild.toolchain.exe.12363058" name="Si32 GNU ARM" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.toolchain.exe">
+							<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.toolchain.debug.level.1779482636" name="Debug Level" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.toolchain.debug.level" value="com.silabs.ide.si32.gcc.cdt.managedbuild.toolchain.debug.level.default" valueType="enumerated"/>
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.GNU_ELF;com.silabs.ide.debug.core.BIN;com.silabs.ide.debug.core.HEX;com.silabs.ide.debug.core.S37" id="com.silabs.ide.si32.gcc.cdt.managedbuild.target.gnu.platform.base.1332137882" isAbstract="false" name="Debug Platform" osList="win32,linux,macosx" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.target.gnu.platform.base"/>
+							<builder buildPath="${workspace_loc:/Test}/GNU ARM v4.8.3 - Release" id="com.silabs.ide.si32.gcc.cdt.managedbuild.target.gnu.builder.base.398138824" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Si32 GNU ARM Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.target.gnu.builder.base"/>
+							<tool id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base.1743571645" name="GNU ARM C Compiler" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base">
+								<option id="gnu.c.compiler.option.optimization.level.770721581" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" value="gnu.c.optimization.level.most" valueType="enumerated"/>
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.def.symbols.368090173" name="Defined symbols (-D)" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.def.symbols"/>
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.debug.builtin.590931123" name="Always branch to builtin functions (-fno-builtin)" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.debug.builtin" value="false" valueType="boolean"/>
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.debug.prolog.1517374321" name="Generate debugger-friendly prologs (-mno-sched-prolog)" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.debug.prolog"/>
+								<option id="gnu.c.compiler.option.preprocessor.undef.symbol.1273395943" name="Undefined symbols (-U)" superClass="gnu.c.compiler.option.preprocessor.undef.symbol" valueType="undefDefinedSymbols">
+									<listOptionValue builtIn="false" value="__INT_FAST32_MAX__"/>
+									<listOptionValue builtIn="false" value="__SIG_ATOMIC_MAX__"/>
+									<listOptionValue builtIn="false" value="__FLT_EPSILON__"/>
+									<listOptionValue builtIn="false" value="__DEC64_MANT_DIG__"/>
+									<listOptionValue builtIn="false" value="__i586"/>
+									<listOptionValue builtIn="false" value="__DBL_MIN__"/>
+									<listOptionValue builtIn="false" value="__INT_LEAST64_TYPE__"/>
+									<listOptionValue builtIn="false" value="__SCHAR_MAX__"/>
+									<listOptionValue builtIn="false" value="__DEC128_MANT_DIG__"/>
+									<listOptionValue builtIn="false" value="__i586__"/>
+									<listOptionValue builtIn="false" value="__GCC_ATOMIC_INT_LOCK_FREE"/>
+									<listOptionValue builtIn="false" value="__UINTPTR_TYPE__"/>
+									<listOptionValue builtIn="false" value="__DBL_MIN_10_EXP__"/>
+									<listOptionValue builtIn="false" value="__GCC_IEC_559"/>
+									<listOptionValue builtIn="false" value="__DBL_DENORM_MIN__"/>
+									<listOptionValue builtIn="false" value="_stdcall"/>
+									<listOptionValue builtIn="false" value="__DBL_HAS_DENORM__"/>
+									<listOptionValue builtIn="false" value="__SHRT_MAX__"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_WCHAR_T__"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_PTRDIFF_T__"/>
+									<listOptionValue builtIn="false" value="__GXX_TYPEINFO_EQUALITY_INLINE"/>
+									<listOptionValue builtIn="false" value="__DEC32_MAX__"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_DOUBLE__"/>
+									<listOptionValue builtIn="false" value="__WINNT__"/>
+									<listOptionValue builtIn="false" value="__FLT_MIN_EXP__"/>
+									<listOptionValue builtIn="false" value="__LDBL_MANT_DIG__"/>
+									<listOptionValue builtIn="false" value="__DEC32_EPSILON__"/>
+									<listOptionValue builtIn="false" value="__INTPTR_MAX__"/>
+									<listOptionValue builtIn="false" value="__LDBL_DIG__"/>
+									<listOptionValue builtIn="false" value="__INT_LEAST8_MAX__"/>
+									<listOptionValue builtIn="false" value="__DEC128_MAX__"/>
+									<listOptionValue builtIn="false" value="__LDBL_DENORM_MIN__"/>
+									<listOptionValue builtIn="false" value="__DEC32_MIN_EXP__"/>
+									<listOptionValue builtIn="false" value="WIN32"/>
+									<listOptionValue builtIn="false" value="__INT_FAST8_MAX__"/>
+									<listOptionValue builtIn="false" value="__UINT_LEAST8_MAX__"/>
+									<listOptionValue builtIn="false" value="__pentium__"/>
+									<listOptionValue builtIn="false" value="__WINNT"/>
+									<listOptionValue builtIn="false" value="__cdecl"/>
+									<listOptionValue builtIn="false" value="__GNUC_PATCHLEVEL__"/>
+									<listOptionValue builtIn="false" value="__DEC32_SUBNORMAL_MIN__"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_POINTER__"/>
+									<listOptionValue builtIn="false" value="__WINT_MAX__"/>
+									<listOptionValue builtIn="false" value="__LDBL_HAS_INFINITY__"/>
+									<listOptionValue builtIn="false" value="__FLT_MAX_10_EXP__"/>
+									<listOptionValue builtIn="false" value="__DEC64_MIN_EXP__"/>
+									<listOptionValue builtIn="false" value="__ATOMIC_ACQ_REL"/>
+									<listOptionValue builtIn="false" value="__DEC32_MIN__"/>
+									<listOptionValue builtIn="false" value="__i386"/>
+									<listOptionValue builtIn="false" value="__LDBL_MIN_10_EXP__"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_LONG_LONG__"/>
+									<listOptionValue builtIn="false" value="__UINT_FAST8_MAX__"/>
+									<listOptionValue builtIn="false" value="__DEC64_MAX_EXP__"/>
+									<listOptionValue builtIn="false" value="_INTEGRAL_MAX_BITS"/>
+									<listOptionValue builtIn="false" value="__GXX_MERGED_TYPEINFO_NAMES"/>
+									<listOptionValue builtIn="false" value="__UINT16_C(c)"/>
+									<listOptionValue builtIn="false" value="__INT16_MAX__"/>
+									<listOptionValue builtIn="false" value="__LDBL_MAX_EXP__"/>
+									<listOptionValue builtIn="false" value="__UINT_LEAST64_MAX__"/>
+									<listOptionValue builtIn="false" value="__FLT_MANT_DIG__"/>
+									<listOptionValue builtIn="false" value="__FLT_RADIX__"/>
+									<listOptionValue builtIn="false" value="__INTMAX_C(c)"/>
+									<listOptionValue builtIn="false" value="__FLT_DIG__"/>
+									<listOptionValue builtIn="false" value="__UINT8_MAX__"/>
+									<listOptionValue builtIn="false" value="__INTMAX_TYPE__"/>
+									<listOptionValue builtIn="false" value="__code_model_32__"/>
+									<listOptionValue builtIn="false" value="__LDBL_MIN_EXP__"/>
+									<listOptionValue builtIn="false" value="__INT_LEAST32_TYPE__"/>
+									<listOptionValue builtIn="false" value="__UINT32_MAX__"/>
+									<listOptionValue builtIn="false" value="__LONG_LONG_MAX__"/>
+									<listOptionValue builtIn="false" value="__DBL_HAS_INFINITY__"/>
+									<listOptionValue builtIn="false" value="__UINT32_C(c)"/>
+									<listOptionValue builtIn="false" value="__DBL_MAX_10_EXP__"/>
+									<listOptionValue builtIn="false" value="__FLT_HAS_QUIET_NAN__"/>
+									<listOptionValue builtIn="false" value="__SIG_ATOMIC_TYPE__"/>
+									<listOptionValue builtIn="false" value="__FLT_HAS_DENORM__"/>
+									<listOptionValue builtIn="false" value="__NO_INLINE__"/>
+									<listOptionValue builtIn="false" value="__INT_LEAST16_MAX__"/>
+									<listOptionValue builtIn="false" value="__DEC128_EPSILON__"/>
+									<listOptionValue builtIn="false" value="__FLT_DECIMAL_DIG__"/>
+									<listOptionValue builtIn="false" value="__GNUC__"/>
+									<listOptionValue builtIn="false" value="__INT_LEAST8_TYPE__"/>
+									<listOptionValue builtIn="false" value="__GCC_ATOMIC_WCHAR_T_LOCK_FREE"/>
+									<listOptionValue builtIn="false" value="__GCC_ATOMIC_LONG_LOCK_FREE"/>
+									<listOptionValue builtIn="false" value="__DEC128_MIN_EXP__"/>
+									<listOptionValue builtIn="false" value="__fastcall"/>
+									<listOptionValue builtIn="false" value="__UINT_FAST64_TYPE__"/>
+									<listOptionValue builtIn="false" value="__GCC_IEC_559_COMPLEX"/>
+									<listOptionValue builtIn="false" value="__INTPTR_TYPE__"/>
+									<listOptionValue builtIn="false" value="__INT64_TYPE__"/>
+									<listOptionValue builtIn="false" value="__DBL_MAX_EXP__"/>
+									<listOptionValue builtIn="false" value="__ATOMIC_ACQUIRE"/>
+									<listOptionValue builtIn="false" value="__WINT_TYPE__"/>
+									<listOptionValue builtIn="false" value="__FLOAT_WORD_ORDER__"/>
+									<listOptionValue builtIn="false" value="__DEC64_SUBNORMAL_MIN__"/>
+									<listOptionValue builtIn="false" value="__ATOMIC_CONSUME"/>
+									<listOptionValue builtIn="false" value="__INT_FAST32_TYPE__"/>
+									<listOptionValue builtIn="false" value="__has_include(STR)"/>
+									<listOptionValue builtIn="false" value="__UINT_FAST8_TYPE__"/>
+									<listOptionValue builtIn="false" value="__PTRDIFF_MAX__"/>
+									<listOptionValue builtIn="false" value="__GCC_ATOMIC_BOOL_LOCK_FREE"/>
+									<listOptionValue builtIn="false" value="__INT_LEAST16_TYPE__"/>
+									<listOptionValue builtIn="false" value="__thiscall"/>
+									<listOptionValue builtIn="false" value="__SIZE_TYPE__"/>
+									<listOptionValue builtIn="false" value="__DEC32_MANT_DIG__"/>
+									<listOptionValue builtIn="false" value="__ATOMIC_RELAXED"/>
+									<listOptionValue builtIn="false" value="__DBL_MAX__"/>
+									<listOptionValue builtIn="false" value="__GCC_ATOMIC_TEST_AND_SET_TRUEVAL"/>
+									<listOptionValue builtIn="false" value="__INT_FAST16_MAX__"/>
+									<listOptionValue builtIn="false" value="__UINT16_MAX__"/>
+									<listOptionValue builtIn="false" value="__UINT_LEAST8_TYPE__"/>
+									<listOptionValue builtIn="false" value="__UINT_FAST32_TYPE__"/>
+									<listOptionValue builtIn="false" value="__stdcall"/>
+									<listOptionValue builtIn="false" value="__pentium"/>
+									<listOptionValue builtIn="false" value="__FLT_EVAL_METHOD__"/>
+									<listOptionValue builtIn="false" value="__UINT16_TYPE__"/>
+									<listOptionValue builtIn="false" value="_X86_"/>
+									<listOptionValue builtIn="false" value="__UINT32_TYPE__"/>
+									<listOptionValue builtIn="false" value="__PRAGMA_REDEFINE_EXTNAME"/>
+									<listOptionValue builtIn="false" value="__FLT_MAX_EXP__"/>
+									<listOptionValue builtIn="false" value="__UINT_FAST16_MAX__"/>
+									<listOptionValue builtIn="false" value="__LDBL_EPSILON__"/>
+									<listOptionValue builtIn="false" value="__DEC64_MIN__"/>
+									<listOptionValue builtIn="false" value="__UINT64_C(c)"/>
+									<listOptionValue builtIn="false" value="__WIN32"/>
+									<listOptionValue builtIn="false" value="__REGISTER_PREFIX__"/>
+									<listOptionValue builtIn="false" value="__INT_FAST8_TYPE__"/>
+									<listOptionValue builtIn="false" value="__ORDER_LITTLE_ENDIAN__"/>
+									<listOptionValue builtIn="false" value="__LDBL_HAS_QUIET_NAN__"/>
+									<listOptionValue builtIn="false" value="__INT8_MAX__"/>
+									<listOptionValue builtIn="false" value="__FLT_DENORM_MIN__"/>
+									<listOptionValue builtIn="false" value="__CHAR32_TYPE__"/>
+									<listOptionValue builtIn="false" value="__WCHAR_MIN__"/>
+									<listOptionValue builtIn="false" value="__UINTMAX_MAX__"/>
+									<listOptionValue builtIn="false" value="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_8"/>
+									<listOptionValue builtIn="false" value="i386"/>
+									<listOptionValue builtIn="false" value="__ATOMIC_HLE_RELEASE"/>
+									<listOptionValue builtIn="false" value="__FLT_MIN_10_EXP__"/>
+									<listOptionValue builtIn="false" value="__UINTPTR_MAX__"/>
+									<listOptionValue builtIn="false" value="__UINT64_MAX__"/>
+									<listOptionValue builtIn="false" value="__WCHAR_MAX__"/>
+									<listOptionValue builtIn="false" value="__ATOMIC_HLE_ACQUIRE"/>
+									<listOptionValue builtIn="false" value="__INT_FAST16_TYPE__"/>
+									<listOptionValue builtIn="false" value="__LDBL_HAS_DENORM__"/>
+									<listOptionValue builtIn="false" value="__GXX_ABI_VERSION"/>
+									<listOptionValue builtIn="false" value="__ATOMIC_RELEASE"/>
+									<listOptionValue builtIn="false" value="__UINTMAX_C(c)"/>
+									<listOptionValue builtIn="false" value="__GCC_ATOMIC_POINTER_LOCK_FREE"/>
+									<listOptionValue builtIn="false" value="__INT_LEAST64_MAX__"/>
+									<listOptionValue builtIn="false" value="__DBL_MIN_EXP__"/>
+									<listOptionValue builtIn="false" value="__UINT_LEAST32_TYPE__"/>
+									<listOptionValue builtIn="false" value="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4"/>
+									<listOptionValue builtIn="false" value="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_LONG_DOUBLE__"/>
+									<listOptionValue builtIn="false" value="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2"/>
+									<listOptionValue builtIn="false" value="__SIZE_MAX__"/>
+									<listOptionValue builtIn="false" value="__UINT_FAST32_MAX__"/>
+									<listOptionValue builtIn="false" value="WINNT"/>
+									<listOptionValue builtIn="false" value="__INT_FAST64_MAX__"/>
+									<listOptionValue builtIn="false" value="_WIN32"/>
+									<listOptionValue builtIn="false" value="__DBL_DECIMAL_DIG__"/>
+									<listOptionValue builtIn="false" value="_cdecl"/>
+									<listOptionValue builtIn="false" value="__SIG_ATOMIC_MIN__"/>
+									<listOptionValue builtIn="false" value="__FLT_MIN__"/>
+									<listOptionValue builtIn="false" value="__GCC_ATOMIC_CHAR32_T_LOCK_FREE"/>
+									<listOptionValue builtIn="false" value="__DBL_EPSILON__"/>
+									<listOptionValue builtIn="false" value="__UINT_FAST64_MAX__"/>
+									<listOptionValue builtIn="false" value="__DEC128_MAX_EXP__"/>
+									<listOptionValue builtIn="false" value="__MINGW32__"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_SIZE_T__"/>
+									<listOptionValue builtIn="false" value="__DBL_DIG__"/>
+									<listOptionValue builtIn="false" value="__UINT_LEAST16_MAX__"/>
+									<listOptionValue builtIn="false" value="__GNUC_MINOR__"/>
+									<listOptionValue builtIn="false" value="__ORDER_PDP_ENDIAN__"/>
+									<listOptionValue builtIn="false" value="__DEC64_MAX__"/>
+									<listOptionValue builtIn="false" value="__BIGGEST_ALIGNMENT__"/>
+									<listOptionValue builtIn="false" value="__UINT_LEAST16_TYPE__"/>
+									<listOptionValue builtIn="false" value="__DECIMAL_BID_FORMAT__"/>
+									<listOptionValue builtIn="false" value="__GCC_ATOMIC_SHORT_LOCK_FREE"/>
+									<listOptionValue builtIn="false" value="__WINT_MIN__"/>
+									<listOptionValue builtIn="false" value="_thiscall"/>
+									<listOptionValue builtIn="false" value="__INT16_C(c)"/>
+									<listOptionValue builtIn="false" value="__INT64_MAX__"/>
+									<listOptionValue builtIn="false" value="__INT_MAX__"/>
+									<listOptionValue builtIn="false" value="__DEC64_EPSILON__"/>
+									<listOptionValue builtIn="false" value="__INT32_C(c)"/>
+									<listOptionValue builtIn="false" value="__INT32_TYPE__"/>
+									<listOptionValue builtIn="false" value="__INT_LEAST32_MAX__"/>
+									<listOptionValue builtIn="false" value="__STDC__"/>
+									<listOptionValue builtIn="false" value="__LDBL_MIN__"/>
+									<listOptionValue builtIn="false" value="__MSVCRT__"/>
+									<listOptionValue builtIn="false" value="__INT8_TYPE__"/>
+									<listOptionValue builtIn="false" value="__BYTE_ORDER__"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_FLOAT__"/>
+									<listOptionValue builtIn="false" value="__INTMAX_MAX__"/>
+									<listOptionValue builtIn="false" value="__GCC_ATOMIC_LLONG_LOCK_FREE"/>
+									<listOptionValue builtIn="false" value="__INT_FAST64_TYPE__"/>
+									<listOptionValue builtIn="false" value="__UINT64_TYPE__"/>
+									<listOptionValue builtIn="false" value="__DEC32_MAX_EXP__"/>
+									<listOptionValue builtIn="false" value="__ATOMIC_SEQ_CST"/>
+									<listOptionValue builtIn="false" value="__WIN32__"/>
+									<listOptionValue builtIn="false" value="__INT32_MAX__"/>
+									<listOptionValue builtIn="false" value="__VERSION__"/>
+									<listOptionValue builtIn="false" value="__INT64_C(c)"/>
+									<listOptionValue builtIn="false" value="__GCC_ATOMIC_CHAR_LOCK_FREE"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_WINT_T__"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_INT__"/>
+									<listOptionValue builtIn="false" value="__USER_LABEL_PREFIX__"/>
+									<listOptionValue builtIn="false" value="__LONG_MAX__"/>
+									<listOptionValue builtIn="false" value="__INT16_TYPE__"/>
+									<listOptionValue builtIn="false" value="__INT8_C(c)"/>
+									<listOptionValue builtIn="false" value="__ORDER_BIG_ENDIAN__"/>
+									<listOptionValue builtIn="false" value="__UINT_LEAST32_MAX__"/>
+									<listOptionValue builtIn="false" value="__PTRDIFF_TYPE__"/>
+									<listOptionValue builtIn="false" value="__CHAR_BIT__"/>
+									<listOptionValue builtIn="false" value="__i386__"/>
+									<listOptionValue builtIn="false" value="__UINT8_C(c)"/>
+									<listOptionValue builtIn="false" value="__DEC128_SUBNORMAL_MIN__"/>
+									<listOptionValue builtIn="false" value="__has_include_next(STR)"/>
+									<listOptionValue builtIn="false" value="__DBL_HAS_QUIET_NAN__"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_SHORT__"/>
+									<listOptionValue builtIn="false" value="__DEC_EVAL_METHOD__"/>
+									<listOptionValue builtIn="false" value="__DBL_MANT_DIG__"/>
+									<listOptionValue builtIn="false" value="__FLT_MAX__"/>
+									<listOptionValue builtIn="false" value="__UINT_FAST16_TYPE__"/>
+									<listOptionValue builtIn="false" value="__UINT_LEAST64_TYPE__"/>
+									<listOptionValue builtIn="false" value="__GNUC_GNU_INLINE__"/>
+									<listOptionValue builtIn="false" value="__DEC128_MIN__"/>
+									<listOptionValue builtIn="false" value="_fastcall"/>
+									<listOptionValue builtIn="false" value="__declspec(x)"/>
+									<listOptionValue builtIn="false" value="__FLT_HAS_INFINITY__"/>
+									<listOptionValue builtIn="false" value="__UINT8_TYPE__"/>
+									<listOptionValue builtIn="false" value="__GCC_HAVE_DWARF2_CFI_ASM"/>
+									<listOptionValue builtIn="false" value="__STDC_HOSTED__"/>
+									<listOptionValue builtIn="false" value="__DECIMAL_DIG__"/>
+									<listOptionValue builtIn="false" value="__LDBL_MAX_10_EXP__"/>
+									<listOptionValue builtIn="false" value="__SIZEOF_LONG__"/>
+									<listOptionValue builtIn="false" value="__UINTMAX_TYPE__"/>
+									<listOptionValue builtIn="false" value="__LDBL_MAX__"/>
+									<listOptionValue builtIn="false" value="__FINITE_MATH_ONLY__"/>
+									<listOptionValue builtIn="false" value="__WCHAR_TYPE__"/>
+									<listOptionValue builtIn="false" value="__GCC_ATOMIC_CHAR16_T_LOCK_FREE"/>
+									<listOptionValue builtIn="false" value="__CHAR16_TYPE__"/>
+								</option>
+								<option id="gnu.c.compiler.option.include.paths.63287925" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lcd-graphics_inc}&quot;"/>
+								</option>
+								<inputType id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.input.1256754598" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.base.1452940585" name="GNU ARM C++ Compiler" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.base">
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.debug.builtin.102787897" name="Always branch to builtin functions (-fno-builtin)" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.debug.builtin"/>
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.debug.prolog.1555066575" name="Generate debugger-friendly prologs (-mno-sched-prolog)" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.debug.prolog"/>
+							</tool>
+							<tool id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.assembler.base.1705109895" name="GNU ARM Assembler" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.assembler.base">
+								<option id="gnu.both.asm.option.include.paths.2144588491" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lcd-graphics_inc}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1090803036" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+							<tool id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.base.1157011303" name="GNU ARM C Linker" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1070607082" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.linker.base.2027069836" name="GNU ARM C++ Linker" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.linker.base"/>
+							<tool id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.archiver.base.885149979" name="GNU ARM Archiver" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.archiver.base"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="CMSIS/efr32mg1p/startup_iar_efr32mg1p.s|lcd-graphics|CMSIS|hal-efr32|command-interpreter|buffer-pool-memory-manager|response-printf" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="com.silabs.ide.project.core" project.generation="32" projectCommon.importModeId="LINK_LIBRARIES" projectCommon.kitId="com.silabs.kit.si32.wireless.wstk.efr32mg1p.slwstk6000a" projectCommon.partId="com.silabs.mcu.si32.efr32.efr32mg1p.efr32mg1p232f256gm48" projectCommon.sdkId="com.silabs.ember.sdk.external.rail:1.2.0.-256640824"/>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="Test.com.silabs.ide.project.core.cdt.cdtMbsProjectType.754838776" name="SLS CDT Project" projectType="com.silabs.ide.project.core.cdt.cdtMbsProjectType"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.silabs.ide.si32.gcc.debug#com.silabs.ide.si32.gcc:4.8.3.20131129;com.silabs.ide.si32.gcc.debug#com.silabs.ide.si32.gcc:4.8.3.20131129.;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base.1207269597;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.input.1424209650">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.silabs.ide.si32.iar.release#com.silabs.ide.si32.iar:7.50.2.10312;com.silabs.ide.si32.iar.release#com.silabs.ide.si32.iar:7.50.2.10312.;iar.arm.toolchain.compiler.v5.4.1.374326226;iar.arm.toolchain.compiler.inputType.v5.4.1.1787206989">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.iar.cdt.arm.scanner.IAR_ARM_PerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.silabs.ide.si32.gcc.release#com.silabs.ide.si32.gcc:4.8.3.20131129;com.silabs.ide.si32.gcc.release#com.silabs.ide.si32.gcc:4.8.3.20131129.;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base.1743571645;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.input.1256754598">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.silabs.ide.si32.iar.debug#com.silabs.ide.si32.iar:7.50.2.10312;com.silabs.ide.si32.iar.debug#com.silabs.ide.si32.iar:7.50.2.10312.;iar.arm.toolchain.compiler.v5.4.1.1481654461;iar.arm.toolchain.compiler.inputType.v5.4.1.587823873">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.iar.cdt.arm.scanner.IAR_ARM_PerProjectProfile"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="IAR ARM - Release">
+			<resource resourceType="PROJECT" workspacePath="/Test"/>
+		</configuration>
+		<configuration configurationName="GNU ARM v4.8.3 - Release">
+			<resource resourceType="PROJECT" workspacePath="/Test"/>
+		</configuration>
+		<configuration configurationName="IAR ARM - Debug">
+			<resource resourceType="PROJECT" workspacePath="/Test"/>
+		</configuration>
+		<configuration configurationName="GNU ARM v4.8.3 - Debug">
+			<resource resourceType="PROJECT" workspacePath="/Test"/>
+		</configuration>
+	</storageModule>
+</cproject>
