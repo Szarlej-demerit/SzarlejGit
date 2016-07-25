@@ -241,7 +241,7 @@ void   GPGGA_Data2Google(GPGGA_Struct_t *data, char *link){
 	} else {
 		strcat(Lon_out, Longitude);
 	}
-	strcat(link, "https://www.google.com/maps/@");
+	strcpy(link, "https://www.google.com/maps/@");
 	strcat(link, Lat_out);
 	strcat(link, ",");
 	strcat(link, Lon_out);
